@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import { linkPageView } from '../lib/fbEvents';
+
 export default function LinkPage() {
   const links = [
     {
@@ -18,6 +21,10 @@ export default function LinkPage() {
     },
   ];
   const currentYear = new Date().getFullYear();
+
+  useEffect(() => {
+    linkPageView();
+  }, []);
 
   return (
     <>
