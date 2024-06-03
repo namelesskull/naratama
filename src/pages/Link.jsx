@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { linkPageView } from '../lib/fbEvents';
+import background from '../assets/images/link.jpg';
 
 export default function LinkPage() {
   const links = [
@@ -31,7 +32,7 @@ export default function LinkPage() {
       <div
         className='h-screen flex flex-col items-center justify-center bg-blend-overlay'
         style={{
-          backgroundImage: `url('https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/backgroundLink.jpg?t=2024-04-08T15%3A31%3A08.576Z')`,
+          backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundColor: 'rgba(0, 0, 0, 0.8)',

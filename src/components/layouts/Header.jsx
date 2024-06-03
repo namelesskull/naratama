@@ -16,7 +16,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className='text-black text-xs' to='/link'>
+              <Link to='/link' className='text-black text-xs'>
                 Link
               </Link>
             </li>
@@ -30,7 +30,10 @@ const Header = () => {
             </li>
           </ul>
           <div className='block md:hidden'>
-            <a href='' className='p-1 text-black border text-xs border-black'>
+            <a
+              href='https://bit.ly/admin-naratama'
+              className='p-1 text-black border text-xs border-black'
+            >
               Contact Us
             </a>
           </div>
