@@ -28,23 +28,23 @@ const Gallery = () => {
           <div className='lg:col-span-2 lg:py-8'>
             <ul className='grid grid-cols-2 gap-4'>
               <li>
-                <div className='block group'>
+                {/* <div className='block group'>
                   <img
                     src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/1.png'
                     alt=''
                     className='object-cover w-full rounded aspect-square'
                   />
-                </div>
+                </div> */}
               </li>
 
               <li>
-                <div className='block group'>
+                {/* <div className='block group'>
                   <img
                     src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/2.png'
                     alt=''
                     className='object-cover w-full rounded aspect-square'
                   />
-                </div>
+                </div> */}
               </li>
             </ul>
           </div>

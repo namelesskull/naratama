@@ -11,9 +11,16 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-white'>
-      <div className='relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24'>
-        <div className='absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8'>
+    <footer className='bg-white mt-2 flexx flex-col'>
+      <div className='flex w-full justify-between px-2'>
+        <div>
+          <img
+            className='h-10 w-auto'
+            src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logoDark.png'
+            alt=''
+          />
+        </div>
+        <div>
           <button
             onClick={scrollToTop}
             className='inline-block rounded-full bg-naratama-300 p-2 text-white shadow transition hover:bg-naratama-400 sm:p-3 lg:p-4'
@@ -35,55 +42,16 @@ const Footer = () => {
             </svg>
           </button>
         </div>
-
-        <div className='lg:flex lg:items-end lg:justify-between'>
-          <div>
-            <div className='flex justify-center lg:justify-start'>
-              <div>
-                <img
-                  className='h-10 w-auto'
-                  src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logoDark.png'
-                  alt=''
-                />
-              </div>
-            </div>
-
-            <p className='mx-auto mt-6 text-sm max-w-md text-center leading-relaxed text-black lg:text-left'>
-              Cause every special moments has a special story to tell. Let us
-              help you to tell yours.
-            </p>
-          </div>
-
-          <ul className='mt-12 flex font-medium text-sm flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12'>
-            <li>
-              <a className='text-black transition hover:underline' href='/'>
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a
-                className='text-black transition hover:underline'
-                href='https://bit.ly/admin-naratama'
-              >
-                Contact Us
-              </a>
-            </li>
-
-            <li>
-              <a
-                className='text-black transition hover:underline'
-                href='https://www.instagram.com/naratama.graduation'
-              >
-                Gallery
-              </a>
-            </li>
-          </ul>
+      </div>
+      <div>
+        <div className='flex flex-col text-xs font-light p-2 my-8 space-y-1'>
+          <p>+62 819-4370-2682</p>
+          <p>Sleman,D.I. Yogyakarta,5581</p>
+          <p>adm.graduation@naratamascape.com</p>
+          <p>
+            &copy; {currentYear} by Naratama Graduation | All Right Reserved
+          </p>
         </div>
-
-        <p className='mt-12 text-center text-sm text-black lg:text-right'>
-          &copy; {currentYear} by Naratama Graduation | All Right Reserved.
-        </p>
       </div>
     </footer>
   );

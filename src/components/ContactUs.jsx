@@ -1,15 +1,15 @@
 export const ContactUs = () => {
   return (
     <>
-      <div className='w-screen bg-black'>
-        <div className='py-12'>
+      <div className='bg-black h-full'>
+        <div className='py-16'>
           <h1 className='text-white font-ubuntu font-medium text-sm text-center mb-1'>
-            INTERESTED TO BOOK?
+            BOOK YOUR SESSION NOW !
           </h1>
           <div className='w-full flex justify-center'>
             <a href='https://bit.ly/admin-naratama'>
               <div className='flex border items-center border-white px-4 w-fit rounded-full'>
-                <h1 className='text-white text-center font-ubuntu font-medium text-sm'>
+                <h1 className='text-white text-center font-ubuntu font-medium text-sm tracking-2'>
                   CONTACT US
                 </h1>
                 <span className='text-white pl-2'>
