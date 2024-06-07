@@ -51,3 +51,53 @@
     src: url('./assets/font/Gilroy-SemiBoldItalic.ttf');
   }
 }
+
+@layer base {
+  @font-face {
+    font-family: 'Classy-Vogue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/ClassyVoguePersonalUse.otf');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Sequel-Sans-Light-Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/Sequel-Sans-Light-Disp.otf');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Sequel-Sans-Medium-Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/Sequel-Sans-Light-Disp.otf');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Sequel-Sans-Bold-Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/Sequel-Sans-Bold-Disp.otf');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Sequel-Sans-Semi-Bold-Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/Sequel-Sans-Semi-Bold-Disp.otf');
+  }
+}

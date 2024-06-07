@@ -11,11 +11,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-white mt-2 flexx flex-col'>
+    <footer className='bg-white mt-8 flexx flex-col'>
       <div className='flex w-full justify-between px-2'>
         <div>
           <img
-            className='h-10 w-auto'
+            className='h-8 w-auto'
             src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logoDark.png'
             alt=''
           />
@@ -23,7 +23,7 @@ const Footer = () => {
         <div>
           <button
             onClick={scrollToTop}
-            className='inline-block rounded-full bg-naratama-300 p-2 text-white shadow transition hover:bg-naratama-400 sm:p-3 lg:p-4'
+            className='inline-block rounded-full bg-black p-1 text-white shadow transition hover:bg-naratama-400 sm:p-3 lg:p-4'
             href='#MainContent'
           >
             <span className='sr-only'>Back to top</span>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <div className='flex flex-col text-xs font-light p-2 my-8 space-y-1'>
+        <div className='flex flex-col text-xs font-light px-2 pt-8 my-8 space-y-1'>
           <p>+62 819-4370-2682</p>
           <p>Sleman,D.I. Yogyakarta,5581</p>
           <p>adm.graduation@naratamascape.com</p>

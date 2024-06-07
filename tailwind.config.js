@@ -16,6 +16,11 @@ export default {
         'gilroy-bold': ['Gilroy-Bold', 'sans-serif'],
         'gilroy-regular': ['Gilroy-Regular', 'sans-serif'],
         'gilroy-italic': ['gillroy-italic'],
+        'classy-vogue': ['Classy-Vogue'],
+        'sequel-sans-ld': ['Sequel-Sans-Light-Display'],
+        'sequel-sans-md': ['Sequel-Sans-Medium-Display'],
+        'sequel-bold-bold': ['Sequel-Sans-Bold-Display'],
+        'sequel-semi-bold': ['Sequel-Sans-Semi-Bold-Display'],
       },
       colors: {
         naratama: {

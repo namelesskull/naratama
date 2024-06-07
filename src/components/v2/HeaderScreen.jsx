@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import background from '../../assets/images/desktop.jpg';
+import logoext from '../../assets/images/logo-ext-white.png';
 
 const HeaderScreen = ({ aRef, bRef, cRef }) => {
   const aboutClick = () => {
@@ -24,12 +25,12 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
         className='h-screen bg-white bg-cover'
         style={{ backgroundImage: `url(${background})` }}
       >
-        <nav className='flex justify-between p-6'>
+        <nav className='flex justify-between py-12 px-16'>
           <div>
-            <img src='placeholder.co/100/200' alt='' />
+            <img className='h-[32px]' src={logoext} alt='logo' />
           </div>
           <div>
-            <ul className='flex mt-4'>
+            <ul className='flex mt-4 font-sequel-sans-ld'>
               <li className='mx-6'>
                 <button>Home</button>
               </li>
@@ -46,16 +47,16 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
           </div>
           <div>
             <a href='https://bit.ly/admin-naratama'>
-              <button className='border border-black px-4 py-2'>
+              <button className='border border-black px-8 py-2 font-sequel-sans-ld'>
                 Contact Us
               </button>
             </a>
           </div>
         </nav>
-        <div className='text-center mt-28 animate-fadeIn'>
-          <h1 className='text-8xl'>NARATAMA GRADUATION</h1>
-          <h2 className='text-2xl mt-4 tracking-3'>
-            GRADUATION PHOTO | HIPPOCRATIC OATH
+        <div className='text-center mt-12 animate-fadeIn'>
+          <h1 className='text-[60px] font-classy-vogue'>NARATAMA GRADUATION</h1>
+          <h2 className='text-[14px] tracking-3 font-gilroy-regular'>
+            GRADUATION PHOTO VIDEO SERVICES
           </h2>
         </div>
       </div>

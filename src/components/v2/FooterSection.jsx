@@ -13,13 +13,13 @@ const FooterSection = () => {
     <main className='h-screen flex flex-col'>
       <div className='bg-black h-1/2 flex justify-center items-center'>
         <div>
-          <h1 className='text-white font-ubuntu font-medium text-2xl text-center mb-2'>
+          <h1 className='text-white font-bold text-[36px] text-center mb-2 font-sequel-sans-md tracking-[0.1em]'>
             BOOK YOUR SESSION NOW
           </h1>
           <div className='w-full flex justify-center'>
             <a href='https://bit.ly/admin-naratama'>
               <div className='flex border-2 items-center border-white px-12 w-fit rounded-full hover:bg-naratama-300'>
-                <h1 className='text-white text-center font-ubuntu font-medium text-2xl'>
+                <h1 className='text-white text-center font-sequel-sans-ld font-medium text-2xl tracking-[0.2em]'>
                   CONTACT US
                 </h1>
                 <span className='text-white pl-2'>
@@ -46,14 +46,14 @@ const FooterSection = () => {
       <div className='flex flex-col justify-between h-1/2 p-12'>
         <div className='flex justify-between'>
           <img
-            className='h-24 w-auto'
+            className='h-12 w-auto'
             src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logoDark.png'
             alt=''
           />
           <div>
             <button
               onClick={scrollToTop}
-              className='inline-block rounded-full bg-black p-2 text-white shadow transition hover:bg-naratama-400 sm:p-3 lg:p-4'
+              className='inline-block rounded-full bg-black p-2 text-white shadow transition hover:bg-naratama-400'
               href='#MainContent'
             >
               <span className='sr-only'>Back to top</span>
@@ -76,11 +76,11 @@ const FooterSection = () => {
         <div className='flex justify-between'>
           <div className='flex flex-col'>
             <p>+62 819-4370-2682</p>
-            <p>Sleman,D.I. Yogyakarta,5581</p>
+            <p>Sleman, D. I. Yogyakarta, 5581</p>
             <p>adm.graduation@naratamascape.com</p>
           </div>
           <div className='flex flex-col items-end'>
-            <ul className='flex space-x-8'>
+            <ul className='flex space-x-8 mt-8'>
               <li>
                 <a className='text-black transition hover:underline' href='/'>
                   Home
@@ -104,8 +104,16 @@ const FooterSection = () => {
                   Gallery
                 </a>
               </li>
+              <li>
+                <a
+                  className='text-black transition hover:underline'
+                  href='/faq'
+                >
+                  F.A.Q
+                </a>
+              </li>
             </ul>
-            <p className='mt-4 text-center text-sm text-black lg:text-right'>
+            <p className='text-center text-black lg:text-right'>
               &copy; {currentYear} by Naratama Graduation | All Right Reserved.
             </p>
           </div>

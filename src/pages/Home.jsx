@@ -10,6 +10,7 @@ import Header from '../components/layouts/Header';
 import HeroPhone from '../components/v2/HeroPhone';
 import Footer from '../components/Footer';
 import { ContactUs } from '../components/ContactUs';
+import GalleryHP from '../components/v2/GelleryHP';
 
 const Home = () => {
   const aRef = useRef(null);
@@ -30,7 +31,7 @@ const Home = () => {
         <Header />
         <HeroPhone />
         <AvailableCarousel />
-        <GallerySection />
+        <GalleryHP />
         <WhyUs />
         <ReviewsSection />
         <ContactUs />

@@ -1,8 +1,10 @@
 const WhyUs = () => {
   return (
-    <section className='text-gray-800 mt-8'>
+    <section className='text-gray-800 mt-[60px] lg:mt-0'>
       <div className='container mx-auto flex flex-col p-6'>
-        <h2 className='py-4 text-3xl font-bold text-center'>Why Choose Us?</h2>
+        <h2 className='lg:mb-6 text-2xl lg:text-5xl lg:mt-[60px] font-bold text-center font-sequel-sans-md'>
+          Why Choose Us?
+        </h2>
         <div className='divide-y divide-gray-300'>
           <div className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'>
             <div className='flex items-center justify-center lg:col-span-1 col-span-full'>
@@ -10,7 +12,7 @@ const WhyUs = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='currentColor'
-                className='md:w-16 md:h-16 w-12 h-12 text-black'
+                className='md:w-16 md:h-16 w-10 h-auto text-black'
               >
                 <path
                   fillRule='evenodd'
@@ -20,10 +22,10 @@ const WhyUs = () => {
               </svg>
             </div>
             <div className='flex flex-col justify-center max-w-3xl col-span-full lg:col-span-3 text-left'>
-              <span className='text-xl text-start font-bold md:text-2xl'>
+              <span className='text-xl text-center font-bold md:text-2xl font-sequel-sans-md'>
                 Professional Team
               </span>
-              <span className='mt-4 text-gray-700 text-justify'>
+              <span className='mt-4 text-gray-700 text-justify font-sequel-sans-ld text-base lg:text-[18px]'>
                 Our team of professional and experienced photographers and
                 videographers are experts in capturing graduation moments. We
                 have experience documenting various graduation ceremonies at
@@ -39,20 +41,19 @@ const WhyUs = () => {
                 fill='currentColor'
                 viewBox='0 0 56 56'
                 xmlns='http://www.w3.org/2000/svg'
-                className='md:w-16 md:h-16 w-12 h-12 text-black'
+                className='md:w-16 md:h-16 w-10 h-auto text-black'
               >
                 <path d='M 27.9999 51.9062 C 41.0546 51.9062 51.9063 41.0547 51.9063 28.0000 C 51.9063 14.9219 41.0312 4.0938 27.9765 4.0938 C 14.8983 4.0938 4.0937 14.9219 4.0937 28.0000 C 4.0937 41.0547 14.9218 51.9062 27.9999 51.9062 Z M 17.6874 38.5703 C 15.1796 38.5703 13.9140 37.3281 13.9140 34.8906 L 13.9140 22.375 C 13.9140 19.9140 15.1796 18.6719 17.6874 18.6719 L 20.3827 18.6719 C 21.3202 18.6719 21.6014 18.4609 22.1405 17.8984 L 23.1014 16.8203 C 23.7109 16.1640 24.3202 15.8125 25.5390 15.8125 L 30.3202 15.8125 C 31.5390 15.8125 32.1483 16.1640 32.7343 16.8203 L 33.6952 17.8984 C 34.2343 18.5078 34.5155 18.6719 35.4530 18.6719 L 38.2655 18.6719 C 40.7265 18.6719 42.0155 19.9140 42.0155 22.375 L 42.0155 34.8906 C 42.0155 37.3281 40.7265 38.5703 38.2655 38.5703 Z M 27.8358 35.2422 C 31.7265 35.2422 34.8436 32.1953 34.8436 28.1875 C 34.8436 24.2969 31.7265 21.1797 27.8358 21.1797 C 23.9452 21.1797 20.7812 24.2969 20.7812 28.1875 C 20.7812 32.125 23.9452 35.2422 27.8358 35.2422 Z M 37.0468 25.0703 C 37.9140 25.0703 38.6405 24.3672 38.6171 23.4766 C 38.6171 22.5860 37.9140 21.8828 37.0468 21.8828 C 36.1796 21.8828 35.4530 22.5860 35.4530 23.4766 C 35.4530 24.3672 36.1796 25.0703 37.0468 25.0703 Z M 27.8358 33.2031 C 25.0702 33.2031 22.8202 30.9766 22.8202 28.1875 C 22.8202 25.4219 25.0702 23.1953 27.8358 23.1953 C 30.5780 23.1953 32.8280 25.4219 32.8280 28.1875 C 32.8280 30.9766 30.5780 33.2031 27.8358 33.2031 Z' />
               </svg>
             </div>
             <div className='flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left'>
-              <span className='text-xl font-bold md:text-2xl'>
+              <span className='text-xl font-bold md:text-2xl font-sequel-sans-md'>
                 Advance Gear
               </span>
-              <span className='mt-4 text-gray-700 text-justify'>
+              <span className='mt-4 text-gray-700 text-justify font-sequel-sans-ld text-base lg:text-[18px]'>
                 We use modern and high-quality equipment to produce the best
                 photos and videos. Our equipment includes DSLR and mirrorless
-                cameras with high-quality lenses, as well as professional
-                lighting and audio equipment. Using modern and high-quality
+                cameras with high-quality lenses. Using modern and high-quality
                 equipment will produce sharp, clear, and memorable graduation
                 documentation.
               </span>
@@ -64,7 +65,7 @@ const WhyUs = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 fill='#ffffff'
                 viewBox='0 0 24 24'
-                className='md:w-16 md:h-16 w-12 h-12 text-black'
+                className='md:w-16 md:h-16 w-10 h-auto text-black'
               >
                 <rect
                   x='2'
@@ -78,16 +79,14 @@ const WhyUs = () => {
               </svg>
             </div>
             <div className='flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left'>
-              <span className='text-xl font-bold md:text-2xl'>
+              <span className='text-xl font-bold md:text-2xl font-sequel-sans-md'>
                 Multiple Packages
               </span>
-              <span className='mt-4 text-gray-700 text-justify'>
-                We offer various graduation documentation packages that can be
-                customized to your needs and budget. We provide photo, video,
-                and combination photo & video packages with various price
-                options. You can choose the package that suits your needs and
-                budget, ensuring you get the best graduation documentation
-                without overspending.
+              <span className='mt-4 text-gray-700 text-justify font-sequel-sans-ld text-base lg:text-[18px]'>
+                We offer various graduation documentation packages that suits to
+                your needs and budget. We provide photo, video, and combination
+                photo & video packages with various price options, ensuring you
+                get the best graduation documentation without overspending.
               </span>
             </div>
           </div>
@@ -97,7 +96,7 @@ const WhyUs = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='currentColor'
-                className='md:w-16 md:h-16 w-12 h-12 text-black'
+                className='md:w-16 md:h-16 w-10 h-auto text-black'
               >
                 <path
                   fillRule='evenodd'
@@ -107,10 +106,10 @@ const WhyUs = () => {
               </svg>
             </div>
             <div className='flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left'>
-              <span className='text-xl font-bold md:text-2xl'>
+              <span className='text-xl font-bold md:text-2xl font-sequel-sans-md'>
                 Elegant and Classy
               </span>
-              <span className='mt-4 text-gray-700 text-justify'>
+              <span className='mt-4 text-gray-700 text-justify font-sequel-sans-ld text-base lg:text-[18px]'>
                 We are committed to producing elegant and classy graduation
                 photos and videos, capturing your special moment perfectly. We
                 have a distinctive photography and videography style that is
@@ -126,7 +125,7 @@ const WhyUs = () => {
                 xmlns='http://www.w3.org/2000/svg'
                 fill='currentColor'
                 viewBox='0 0 453.165 453.165'
-                className='md:w-16 md:h-16 w-12 h-12 text-black'
+                className='md:w-16 md:h-16 w-10 h-auto text-black'
               >
                 <g>
                   <path d='M435.783,139.576c-6.025,11.601-18.147,19.549-32.098,19.549h-11.372c8.509,20.83,13.213,43.603,13.213,67.457   c0,98.669-80.273,178.943-178.943,178.943S47.639,325.252,47.639,226.583S127.913,47.64,226.583,47.64   c31.485,0,61.62,8.175,88.192,23.29l0.055-0.055c7.035,3.992,13.809,8.471,20.275,13.411l-29.965,29.965   c-3.527,3.527-4.582,8.832-2.674,13.441c1.909,4.609,6.406,7.614,11.395,7.614h89.825c6.812,0,12.333-5.522,12.333-12.334V33.147   c0-4.989-3.005-9.486-7.613-11.395c-4.61-1.909-9.914-0.853-13.441,2.674L369.03,50.36c-41.272-33.428-91.761-50.36-142.447-50.36   C101.645,0.001,0,101.645,0,226.583s101.645,226.582,226.583,226.582S453.165,351.52,453.165,226.583   C453.165,195.77,446.973,166.38,435.783,139.576z' />
@@ -135,16 +134,16 @@ const WhyUs = () => {
               </svg>
             </div>
             <div className='flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left'>
-              <span className='text-xl font-bold md:text-2xl'>
+              <span className='text-xl font-bold md:text-2xl font-sequel-sans-md'>
                 Timeless Photos
               </span>
-              <span className='mt-4 text-gray-700 text-justify'>
+              <span className='mt-4 text-gray-700 text-justify font-sequel-sans-ld text-base lg:text-[18px]'>
                 We understand that graduation photos are memories that will be
                 cherished forever. Therefore, we offer timeless photos that will
-                never fade. Our timeless photos have beautiful composition,
-                perfect lighting, and natural editing. With timeless photos, you
-                can reminisce about your graduation moment with happiness and
-                nostalgia whenever you see them.
+                never fade. Our timeless photos have beautiful composition and
+                natural editing. With timeless photos, you can reminisce about
+                your graduation moment with happiness and nostalgia whenever you
+                see them.
               </span>
             </div>
           </div>

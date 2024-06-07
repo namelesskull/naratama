@@ -3,7 +3,7 @@ export const ContactUs = () => {
     <>
       <div className='bg-black h-full'>
         <div className='py-16'>
-          <h1 className='text-white font-ubuntu font-medium text-sm text-center mb-1'>
+          <h1 className='text-white font-ubuntu font-medium text-base text-center mb-1'>
             BOOK YOUR SESSION NOW !
           </h1>
           <div className='w-full flex justify-center'>

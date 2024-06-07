@@ -57,7 +57,7 @@ export const UserForm = () => {
           onSubmit={handleSubmit}
         >
           <div className='mb-6 mt-32 w-full'>
-            <h1 className='text-xl font-gilroy-bold'>Form Booking</h1>
+            <h1 className='text-xl font-gilroy-bold'>Booking Form</h1>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
             <input
@@ -74,7 +74,7 @@ export const UserForm = () => {
               htmlFor='nama'
               className='peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Nama
+              Name
             </label>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
@@ -92,7 +92,7 @@ export const UserForm = () => {
               htmlFor='kampus'
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Kampus
+              Campuss
             </label>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
@@ -105,7 +105,7 @@ export const UserForm = () => {
               onChange={handleChange}
             >
               <option value='' disabled selected>
-                Select Paket
+                Select Package
               </option>
               {[
                 'Personal-Lite',
@@ -128,7 +128,7 @@ export const UserForm = () => {
               htmlFor='paket'
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Paket
+              Package
             </label>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
@@ -143,10 +143,10 @@ export const UserForm = () => {
               onChange={handleChange}
             />
             <label
-              htmlFor='nama'
+              htmlFor='lokasi'
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Lokasi
+              Meeting Point
             </label>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
@@ -164,7 +164,7 @@ export const UserForm = () => {
               htmlFor='noWa'
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Nomor WA
+              Whatsapp Number
             </label>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
@@ -200,7 +200,7 @@ export const UserForm = () => {
               htmlFor='date'
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Tanggal
+              Date
             </label>
           </div>
           <div className='relative z-0 w-full mb-5 group'>
@@ -218,7 +218,7 @@ export const UserForm = () => {
               htmlFor='jam'
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
-              Jam
+              Time
             </label>
           </div>
 

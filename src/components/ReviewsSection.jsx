@@ -3,6 +3,22 @@ import Slider from 'react-slick';
 const ReviewsSection = () => {
   const reviews = [
     {
+      name: 'Rahma',
+      campuss: 'Universitas Diponegoro',
+      imageUrl:
+        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/rahma.jpg',
+      description:
+        'Aku puas banget huhuhu di jasa fotografer Naratama ini. Dari kakak sebagai admin fast respon dan sangat membantu. Trs fg nya bener bener bantuin dari awal sampai akhir selama sesi foto fotonyaaa. Buat pengiriman foto nya baik yg asli sama edit juga cepet. Aku puas banget kak. Makasih ya kak💖',
+    },
+    {
+      name: 'Sharron',
+      campuss: 'Universitas Gadjah Mada',
+      imageUrl:
+        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/syaron.jpg',
+      description:
+        'KAKK aku udah cekk, bagus bagus banget semuanyaaa😍😍❤️ makasih banyak ya kaak editannya jos bangett',
+    },
+    {
       name: 'Vita',
       imageUrl:
         'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/vita_review.jpg',
@@ -26,35 +42,43 @@ const ReviewsSection = () => {
       description:
         'aaa cakep bangeeettt.makasiii. servicenya bagus banget pulaaa. Worth banget pokoknya. dah wajib jadi rekomendasi nih',
     },
+    {
+      name: 'Syifa',
+      campuss: 'UIN Saifudin Zuhri',
+      imageUrl:
+        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/syifa.jpg',
+      description:
+        'Masya Allah,  jepretannya jg kerenn bgttt kakk aku puas dan sukakk sekali, blm di edit aja dh baguss🥰',
+    },
   ];
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 2.5,
+    slidesToShow: 3.5,
     arrows: false,
   };
 
   const settingsHp = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 1.2,
+    slidesToShow: 1.25,
     arrows: false,
   };
   return (
     <section className='bg-white'>
-      <div className='lg:mx-24 py-12 lg:py-16'>
-        <h2 className='text-center lg:text-2xl text-xl m-8 font-semibold tracking-tight text-gray-900 sm:text-5xl'>
+      <div className='lg:mx-16 lg:py-16'>
+        <h2 className='text-center text-2xl font-sequel-sans-md lg:text-5xl m-8 font-semibold tracking-tight text-gray-900'>
           What they said
         </h2>
-        <div className='mt-8 hidden lg:block'>
+        <div className='mt-14 hidden lg:block'>
           <Slider {...settings}>
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className='bg-black p-12 shadow-sm max-w-xl h-64'
+                className='bg-black px-12 py-8 shadow-sm max-w-md h-64'
               >
                 <div className='flex items-center gap-4'>
                   <img
@@ -63,34 +87,36 @@ const ReviewsSection = () => {
                     className='h-14 w-14 rounded-full object-cover'
                   />
                   <div>
-                    <p className='mt-0.5 text-sm font-medium text-white'>
+                    <p className='mt-0.5 text-[16px] font-bold text-white font-sequel-sans-md tracking-2'>
                       {review.name}
                     </p>
-                    <span className='mt-0.5 text-xs font-medium text-white'>
+                    <span className='mt-0.5 text-[14px] text-xs font-medium text-white font-sequel-sans-md tracking-2'>
                       {review.campuss}
                     </span>
                   </div>
                 </div>
-                <p className='mt-4 text-xs text-white'>{review.description}</p>
+                <p className='mt-4 text-[14px] text-white font-sequel-sans-ld tracking-2'>
+                  {review.description}
+                </p>
               </div>
             ))}
           </Slider>
         </div>
-        <div className='mt-8 lg:hidden'>
+        <div className='my-8 mx-4 lg:hidden'>
           <Slider {...settingsHp}>
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className='bg-black lg:p-12 p-4 shadow-sm max-w-xs h-52'
+                className='bg-black lg:p-12 p-4 shadow-sm max-w-[17rem] h-64'
               >
                 <div className='flex items-center gap-4'>
                   <img
                     alt={review.name}
                     src={review.imageUrl}
-                    className='h-14 w-14 rounded-full object-cover'
+                    className='h-10 w-10 rounded-full object-cover'
                   />
                   <div>
-                    <p className='mt-0.5 text-sm font-medium text-white'>
+                    <p className='mt-0.5 text-sm font-medium text-white font-sequel-sans-md'>
                       {review.name}
                     </p>
                     <span className='mt-0.5 text-xs font-medium text-white'>
