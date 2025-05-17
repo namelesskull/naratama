@@ -69,8 +69,8 @@ const AvailableCarousel = ({ citiesRef }) => {
             <p className='lg:text-start text-[14px] text-center font-sf-pro-light lg:text-[18px] flex flex-col'>
               Our dedicated team covers universities across various cities in
               Indonesia,
-              <br /> ensuring you receive prompt and efficient service. Here are
-              our coverage areas.
+              <br className='hidden lg:block' /> ensuring you receive prompt and
+              efficient service. Here are our coverage areas.
             </p>
           </div>
         </div>
