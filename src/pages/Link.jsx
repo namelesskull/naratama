@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { linkPageView } from '../lib/fbEvents';
 import background from '../assets/images/link.jpg';
+import naratamawhite from '../assets/images/naratama-wihite-long.png';
 
 export default function LinkPage() {
   const links = [
@@ -60,11 +61,8 @@ export default function LinkPage() {
         </div>
 
         <div className='mt-20'>
-          <div className='w-28 mx-auto mb-2'>
-            <img
-              src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logo.png'
-              alt='naratama'
-            />
+          <div className='w-20 lg:w-24 mx-auto mb-2'>
+            <img src={naratamawhite} alt='naratama' />
           </div>
           <h1 className='text-white text-xs'>
             &copy; {currentYear} by Naratama Graduation | All right reserved
