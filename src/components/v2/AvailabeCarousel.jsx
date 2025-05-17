@@ -65,27 +65,35 @@ const AvailableCarousel = ({ citiesRef }) => {
           <h1 className='lg:text-5xl font-bold text-2xl font-sequel-sans-md text-center lg:text-start'>
             We are available in your city
           </h1>
-          <div className='mt-3 mx-4'>
+          <div className='mt-3'>
             <p className='lg:text-start text-[14px] text-center font-sf-pro-light lg:text-[18px] flex flex-col'>
               Our dedicated team covers universities across various cities in
-              Indonesia, ensuring you receive prompt and efficient service. Here
-              are our coverage areas.
+              Indonesia,
+              <br /> ensuring you receive prompt and efficient service. Here are
+              our coverage areas.
             </p>
           </div>
         </div>
       </section>
-      <section
-        data-aos='fade-left'
-        className='hidden lg:block lg:w-1/2 w-full mr-16'
-      >
-        <div className='slider-container pl-72'>
-          <Slider {...settings}>
-            {cities.map((city, index) => (
-              <div key={index}>
-                <AvailCard city={city.title} image={city.imageUrl} />
-              </div>
-            ))}
-          </Slider>
+      <section data-aos='fade-left' className='hidden lg:block lg:w-1/2 w-full'>
+        <div
+          className='flex space-x-4 w-full overflow-x-scroll'
+          style={{
+            display: 'flex',
+            gap: '1rem', // space-x-4 equivalent in Tailwind
+            width: '100%',
+            overflowX: 'scroll',
+            scrollbarWidth: 'none', // Firefox
+            msOverflowStyle: 'none', // Internet Explorer 10+
+          }}
+        >
+          {/* <Slider {...settings}> */}
+          {cities.map((city, index) => (
+            <div key={index}>
+              <AvailCard city={city.title} image={city.imageUrl} />
+            </div>
+          ))}
+          {/* </Slider> */}
         </div>
       </section>
       <section className='lg:hidden w-full h-full px-4'>

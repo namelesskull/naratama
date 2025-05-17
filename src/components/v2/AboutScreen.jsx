@@ -51,18 +51,22 @@ const AboutScreen = forwardRef(({ aboutRef }) => {
             <p>{currentYear}</p>
           </div>
           <div ref={ref} className='h-1/2 flex flex-col justify-end mb-16'>
-            <h1 className='text-5xl font-extrabold mb-8 font-sequel-sans-md'>
+            <h1
+              data-aos='fade-left'
+              className='text-5xl font-extrabold mb-8 font-sequel-sans-md'
+            >
               About Us
             </h1>
-            <p className='font-sf-pro-light text-[18px] flex flex-col'>
-              <p>
-                Naratama Graduation is a graduation documentation service
-                estabilished in 2023. The name Naratama comes from Sanskrit,
-              </p>
-              means main human or VIP {'(Very Important Person)'}. In line with
-              its name, we are committed to creating elegant, minimalist, and
-              classy documentation results. We believe that everyone deserves
-              the best service and high-quality documentation.
+            <p
+              data-aos='fade-left'
+              className='font-sf-pro-light text-[18px] flex flex-col'
+            >
+              Naratama Graduation is a graduation documentation service
+              established in 2023. The name Naratama comes from Sanskrit, means
+              main human or VIP {'(Very Important Person)'}. In line with its
+              name, we are committed to creating elegant, minimalist, and classy
+              documentation results. We believe that everyone deserves the best
+              service and high-quality documentation.
             </p>
           </div>
         </div>

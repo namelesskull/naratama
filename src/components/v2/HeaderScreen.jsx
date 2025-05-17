@@ -22,7 +22,7 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
   return (
     <>
       <div
-        className='h-screen bg-white bg-cover'
+        className='h-screen bg-white bg-cover animate-fadeIn'
         style={{ backgroundImage: `url(${background})` }}
       >
         <nav className='flex justify-between py-12 px-16'>
@@ -53,7 +53,7 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
             </a>
           </div>
         </nav>
-        <div className='text-center mt-12 animate-fadeIn'>
+        <div data-aos='fade-up' className='text-center mt-12 animate-fadeIn'>
           <h1 className='text-[60px] font-classy-vogue'>NARATAMA GRADUATION</h1>
           <h2 className='text-[14px] tracking-3 font-gilroy-regular'>
             GRADUATION PHOTO VIDEO SERVICES

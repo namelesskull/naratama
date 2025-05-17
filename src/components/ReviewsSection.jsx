@@ -119,38 +119,50 @@ const ReviewsSection = () => {
       <div className='lg:mx-16 lg:py-16'>
         <h2
           data-aos='fade-right'
-          className='text-center text-2xl font-sequel-sans-md lg:text-5xl m-8 font-semibold tracking-tight text-gray-900'
+          className='text-center block lg:hidden text-2xl font-sequel-sans-md lg:text-5xl text-spa m-8 font-semibold text-gray-900'
         >
           What they said
         </h2>
-        <div className='mt-14 hidden lg:block'>
-          <Slider {...settings}>
-            {reviews.map((review, index) => (
-              <div
-                key={index}
-                className='bg-black px-12 py-8 shadow-sm max-w-md h-64'
-              >
-                <div className='flex items-center gap-4'>
-                  {/* <img
+        <h2
+          data-aos='fade-up'
+          className='text-center hidden lg:block text-2xl font-sequel-sans-md lg:text-5xl text-spa m-8 font-semibold text-gray-900'
+        >
+          What they said
+        </h2>
+        <div
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+          }}
+          className='mt-14 hidden lg:flex overflow-x-scroll w-[100vw] space-x-6'
+        >
+          {/* <Slider {...settings}> */}
+          {reviews.map((review, index) => (
+            <div
+              key={index}
+              className='bg-black px-12 min-w-[28vw] py-8 shadow-sm h-72'
+            >
+              <div className='flex items-center gap-4'>
+                {/* <img
                     alt={review.name}
                     src={review.imageUrl}
                     className='h-14 w-14 rounded-full object-cover'
                   /> */}
-                  <div>
-                    <p className='mt-0.5 text-[16px] font-bold text-white font-sequel-sans-md tracking-2'>
-                      {review.name}
-                    </p>
-                    <span className='mt-0.5 text-[14px] text-xs font-medium text-white font-sequel-sans-md tracking-2'>
-                      {review.campuss}
-                    </span>
-                  </div>
+                <div>
+                  <p className='mt-0.5 text-[20px] font-bold text-white font-sequel-sans-md tracking-2'>
+                    {review.name}
+                  </p>
+                  <span className='mt-0.5 text-[16px] font-medium text-white font-sequel-sans-md tracking-2'>
+                    {review.campuss}
+                  </span>
                 </div>
-                <p className='mt-4 text-[14px] text-white font-sequel-sans-ld tracking-2'>
-                  {review.description}
-                </p>
               </div>
-            ))}
-          </Slider>
+              <p className='mt-4 text-[16px] text-white font-sequel-sans-ld tracking-2'>
+                {review.description}
+              </p>
+            </div>
+          ))}
+          {/* </Slider> */}
         </div>
         <div className='my-8 mx-4 lg:hidden'>
           <Slider {...settingsHp}>

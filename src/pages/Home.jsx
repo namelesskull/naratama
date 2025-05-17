@@ -27,7 +27,7 @@ const Home = () => {
         <ReviewsSection />
         <FooterSection />
       </main>
-      <main className='block lg:hidden'>
+      <main className='block lg:hidden overflow-x-hidden'>
         <Header />
         <HeroPhone />
         <AvailableCarousel />

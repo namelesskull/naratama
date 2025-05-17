@@ -1,3 +1,5 @@
+import naratamaLogo from '../../assets/images/naratama-text-black.png';
+
 const FooterSection = () => {
   const scrollToTop = () => {
     if (typeof window !== 'undefined') {
@@ -13,10 +15,13 @@ const FooterSection = () => {
     <main className='h-screen flex flex-col'>
       <div className='bg-black h-1/2 flex justify-center items-center'>
         <div>
-          <h1 className='text-white font-bold text-[36px] text-center mb-2 font-sequel-sans-md tracking-[0.1em]'>
+          <h1
+            data-aos='fade-up'
+            className='text-white font-bold text-[36px] text-center mb-2 font-sequel-sans-md tracking-[0.1em]'
+          >
             BOOK YOUR SESSION NOW
           </h1>
-          <div className='w-full flex justify-center'>
+          <div data-aos='fade-up' className='w-full flex justify-center'>
             <a href='https://bit.ly/adm-naratama'>
               <div className='flex border-2 items-center border-white px-12 w-fit rounded-full hover:bg-naratama-300'>
                 <h1 className='text-white text-center font-sequel-sans-ld font-medium text-2xl tracking-[0.2em]'>
@@ -45,11 +50,7 @@ const FooterSection = () => {
       </div>
       <div className='flex flex-col justify-between h-1/2 p-12'>
         <div className='flex justify-between'>
-          <img
-            className='h-12 w-auto'
-            src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logoDark.png'
-            alt=''
-          />
+          <img className='h-8 w-auto' src={naratamaLogo} alt='naratama' />
           <div>
             <button
               onClick={scrollToTop}
@@ -77,7 +78,9 @@ const FooterSection = () => {
           <div className='flex flex-col'>
             <p>+62 819-4370-2682</p>
             <p>Sleman, D. I. Yogyakarta, 5581</p>
-            <p>adm.graduation@naratamascape.com</p>
+            <a href='mailto:adm.naratamagraduation@gmail.com'>
+              <p>adm.naratamagraduation@gmail.com</p>
+            </a>
           </div>
           <div className='flex flex-col items-end'>
             <ul className='flex space-x-8 mt-8'>

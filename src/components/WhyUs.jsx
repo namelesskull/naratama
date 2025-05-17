@@ -28,7 +28,7 @@ const WhyUs = () => {
               </svg>
             </div>
             <div className='flex flex-col justify-center max-w-3xl col-span-full lg:col-span-3 text-left'>
-              <span className='text-xl text-center font-bold md:text-2xl font-sequel-sans-md'>
+              <span className='text-xl text-center lg:text-start font-bold md:text-2xl font-sequel-sans-md'>
                 Professional Team
               </span>
               <span className='mt-4 text-gray-700 text-justify font-sequel-sans-ld text-base lg:text-[18px]'>
