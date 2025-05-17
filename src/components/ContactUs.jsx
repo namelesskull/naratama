@@ -3,12 +3,18 @@ export const ContactUs = () => {
     <>
       <div className='bg-black h-full'>
         <div className='py-16'>
-          <h1 className='text-white font-ubuntu font-medium text-base text-center mb-1'>
+          <h1
+            data-aos='fade-up'
+            className='text-white font-ubuntu font-medium text-base text-center mb-1'
+          >
             BOOK YOUR SESSION NOW !
           </h1>
           <div className='w-full flex justify-center'>
-            <a href='https://bit.ly/admin-naratama'>
-              <div className='flex border items-center border-white px-4 w-fit rounded-full'>
+            <a href='https://bit.ly/adm-naratama'>
+              <div
+                data-aos='fade-up'
+                className='flex border items-center border-white px-4 w-fit rounded-full'
+              >
                 <h1 className='text-white text-center font-ubuntu font-medium text-sm tracking-2'>
                   CONTACT US
                 </h1>

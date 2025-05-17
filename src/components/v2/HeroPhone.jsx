@@ -18,12 +18,12 @@ const HeroPhone = () => {
           </h2>
         </div>
       </div>
-      <div className='text-center mt-[60px]'>
+      <div data-aos='fade-up' className='text-center mt-[40px]'>
         <h1 className='font-semibold text-2xl mb-3 font-sequel-sans-md'>
           About Us
         </h1>
-        <p className='flex flex-col font-light text-base mx-4 font-sequel-sans-ld'>
-          Naratama Graduation is a graduation documentation service estabilished
+        <p className='flex flex-col text-[14px] mx-4 font-sf-pro-light'>
+          Naratama Graduation is a graduation documentation service established
           in 2023. The name Naratama comes from Sanskrit, means main human or
           VIP {'(Very Important Person)'}. In line with its name, we are
           committed to creating elegant and classy documentation results. We

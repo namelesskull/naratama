@@ -26,15 +26,15 @@ const Header = () => {
             <li>
               <Link
                 className='text-black text-xs'
-                to='https://www.instagram.com/naratama.graduation'
+                to='https://bit.ly/adm-naratama'
               >
-                Contact Us
+                Contact
               </Link>
             </li>
           </ul>
           {/* <div className='block md:hidden'>
             <a
-              href='https://bit.ly/admin-naratama'
+              href='https://bit.ly/adm-naratama'
               className='p-0.5 text-black border text-xs border-black'
             >
               Contact Us

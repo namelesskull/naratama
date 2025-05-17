@@ -1,3 +1,5 @@
+import naratamaLogo from '../assets/images/naratama-text-black.png';
+
 const Footer = () => {
   const scrollToTop = () => {
     if (typeof window !== 'undefined') {
@@ -12,16 +14,13 @@ const Footer = () => {
 
   return (
     <footer className='bg-white mt-8 flexx flex-col'>
-      <div className='flex w-full justify-between px-2'>
-        <div>
-          <img
-            className='h-8 w-auto'
-            src='https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/logoDark.png'
-            alt=''
-          />
+      <div className='flex w-full justify-between items-center px-2'>
+        <div data-aos='fade-right'>
+          <img className='h-6 w-auto' src={naratamaLogo} alt='naratama' />
         </div>
         <div>
           <button
+            data-aos='fade-up'
             onClick={scrollToTop}
             className='inline-block rounded-full bg-black p-1 text-white shadow transition hover:bg-naratama-400 sm:p-3 lg:p-4'
             href='#MainContent'
@@ -46,8 +45,10 @@ const Footer = () => {
       <div>
         <div className='flex flex-col text-xs font-light px-2 pt-8 my-8 space-y-1'>
           <p>+62 819-4370-2682</p>
-          <p>Sleman,D.I. Yogyakarta,5581</p>
-          <p>adm.graduation@naratamascape.com</p>
+          <p>Sleman, D. I. Yogyakarta, 5581</p>
+          <a href='mailto:adm.naratamagraduation@gmail.com'>
+            <p>adm.naratamagraduation@gmail.com</p>
+          </a>
           <p>
             &copy; {currentYear} by Naratama Graduation | All Right Reserved
           </p>

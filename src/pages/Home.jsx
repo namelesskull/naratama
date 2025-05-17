@@ -18,7 +18,7 @@ const Home = () => {
   const cRef = useRef(null);
   return (
     <>
-      <main className='hidden lg:block'>
+      <main className='hidden lg:block overflow-x-hidden'>
         <HeaderScreen aRef={aRef} bRef={bRef} cRef={cRef} />
         <AboutScreen aboutRef={aRef} />
         <AvailableCarousel citiesRef={bRef} />

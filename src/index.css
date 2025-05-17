@@ -101,3 +101,23 @@
     src: url('./assets/font/Sequel-Sans-Semi-Bold-Disp.otf');
   }
 }
+
+@layer base {
+  @font-face {
+    font-family: 'SF-Pro-Text-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/SF-Pro-Text-Regular.otf');
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'SF-Pro-Text-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/font/SFNSText-Light.otf');
+  }
+}

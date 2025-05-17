@@ -3,6 +3,12 @@ import Slider from 'react-slick';
 import AvailCard from './AvailCard';
 import { forwardRef } from 'react';
 import AvailCardHP from './AvailCardHP';
+import jakarta from '../../assets/images/monas.webp';
+import bandung from '../../assets/images/bandung.jpg';
+import jogja from '../../assets/images/jogja.jpg';
+import semarang from '../../assets/images/semarang.jpg';
+import purwokerto from '../../assets/images/purwokerto.jpg';
+import solo from '../../assets/images/solo.jpg';
 
 const AvailableCarousel = ({ citiesRef }) => {
   const settings = {
@@ -26,47 +32,41 @@ const AvailableCarousel = ({ citiesRef }) => {
   const cities = [
     {
       title: 'Jakarta',
-      imageUrl:
-        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/monas.jpg',
+      imageUrl: jakarta,
     },
     {
       title: 'Bandung',
-      imageUrl:
-        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/bandung.jpg',
+      imageUrl: bandung,
     },
     {
       title: 'Jogja',
-      imageUrl:
-        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/jogja.jpg',
-    },
-    {
-      title: 'Semarang',
-      imageUrl:
-        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/semarang.jpg',
+      imageUrl: jogja,
     },
     {
       title: 'Solo',
-      imageUrl:
-        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/solo.jpg',
+      imageUrl: solo,
+    },
+    {
+      title: 'Semarang',
+      imageUrl: semarang,
     },
     {
       title: 'Purwokerto',
-      imageUrl:
-        'https://xostirwdchxiskxberwl.supabase.co/storage/v1/object/public/naratama/purwokerto.jpg',
+      imageUrl: purwokerto,
     },
   ];
   return (
     <main
       ref={citiesRef}
-      className='lg:h-screen mt-[60px] flex items-center flex-col lg:flex-row lg:mt-0'
+      className='lg:h-screen mt-[30px] flex items-center flex-col lg:flex-row lg:mt-0'
     >
-      <section className='lg:w-1/2 mb-3 lg:mb-0'>
+      <section className='lg:w-1/2 mb-3 lg:mb-0' data-aos='fade-right'>
         <div className='flex flex-col justify-center lg:pl-20 my-4 lg:my-0'>
           <h1 className='lg:text-5xl font-bold text-2xl font-sequel-sans-md text-center lg:text-start'>
             We are available in your city
           </h1>
           <div className='mt-3 mx-4'>
-            <p className='lg:text-start text-base text-center font-sequel-sans-ld lg:text-[18px] flex flex-col'>
+            <p className='lg:text-start text-[14px] text-center font-sf-pro-light lg:text-[18px] flex flex-col'>
               Our dedicated team covers universities across various cities in
               Indonesia, ensuring you receive prompt and efficient service. Here
               are our coverage areas.
@@ -74,7 +74,10 @@ const AvailableCarousel = ({ citiesRef }) => {
           </div>
         </div>
       </section>
-      <section className='hidden lg:block lg:w-1/2 w-full mr-16'>
+      <section
+        data-aos='fade-left'
+        className='hidden lg:block lg:w-1/2 w-full mr-16'
+      >
         <div className='slider-container pl-72'>
           <Slider {...settings}>
             {cities.map((city, index) => (

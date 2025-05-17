@@ -2,11 +2,17 @@ const WhyUs = () => {
   return (
     <section className='text-gray-800 mt-[60px] lg:mt-0'>
       <div className='container mx-auto flex flex-col p-6'>
-        <h2 className='lg:mb-6 text-2xl lg:text-5xl lg:mt-[60px] font-bold text-center font-sequel-sans-md'>
+        <h2
+          data-aos='fade-right'
+          className='lg:mb-6 text-2xl lg:text-5xl lg:mt-[60px] font-bold text-center font-sequel-sans-md'
+        >
           Why Choose Us?
         </h2>
         <div className='divide-y divide-gray-300'>
-          <div className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'>
+          <div
+            data-aos='fade-right'
+            className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'
+          >
             <div className='flex items-center justify-center lg:col-span-1 col-span-full'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -35,7 +41,10 @@ const WhyUs = () => {
               </span>
             </div>
           </div>
-          <div className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'>
+          <div
+            data-aos='fade-right'
+            className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'
+          >
             <div className='flex items-center justify-center lg:col-span-1 col-span-full'>
               <svg
                 fill='currentColor'
@@ -59,7 +68,10 @@ const WhyUs = () => {
               </span>
             </div>
           </div>
-          <div className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'>
+          <div
+            data-aos='fade-right'
+            className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'
+          >
             <div className='flex items-center justify-center lg:col-span-1 col-span-full'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -90,7 +102,10 @@ const WhyUs = () => {
               </span>
             </div>
           </div>
-          <div className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'>
+          <div
+            data-aos='fade-right'
+            className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'
+          >
             <div className='flex items-center justify-center lg:col-span-1 col-span-full'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -119,7 +134,10 @@ const WhyUs = () => {
               </span>
             </div>
           </div>
-          <div className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'>
+          <div
+            data-aos='fade-right'
+            className='grid justify-center grid-cols-4 p-8 mx-auto space-y-4 lg:space-y-0'
+          >
             <div className='flex items-center justify-center lg:col-span-1 col-span-full'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'

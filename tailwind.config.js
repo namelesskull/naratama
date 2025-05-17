@@ -21,6 +21,8 @@ export default {
         'sequel-sans-md': ['Sequel-Sans-Medium-Display'],
         'sequel-bold-bold': ['Sequel-Sans-Bold-Display'],
         'sequel-semi-bold': ['Sequel-Sans-Semi-Bold-Display'],
+        'sf-pro-regular': ['SF-Pro-Text-Regular'],
+        'sf-pro-light': ['SF-Pro-Text-Light'],
       },
       colors: {
         naratama: {

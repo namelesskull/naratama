@@ -46,7 +46,7 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
             </ul>
           </div>
           <div>
-            <a href='https://bit.ly/admin-naratama'>
+            <a href='https://bit.ly/adm-naratama'>
               <button className='border border-black px-8 py-2 font-sequel-sans-ld'>
                 Contact Us
               </button>

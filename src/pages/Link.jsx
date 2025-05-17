@@ -6,7 +6,7 @@ export default function LinkPage() {
   const links = [
     {
       title: 'Whatsapp',
-      url: 'https://bit.ly/admin-naratama',
+      url: 'https://bit.ly/adm-naratama',
     },
     {
       title: 'Instagram',

@@ -4,7 +4,7 @@ const AvailCard = ({ image, city }) => {
     <div className='mb-16 lg:mb-0'>
       <div className='relative max-w-sm w-[168px] h-36 lg:h-[237px] lg:w-[160px] overflow-hidden'>
         <img
-          className='w-full h-[192px] object-cover'
+          className='w-full h-full object-cover'
           src={image}
           alt='Sunset in the mountains'
         />
