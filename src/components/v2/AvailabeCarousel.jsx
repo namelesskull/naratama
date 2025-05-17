@@ -65,7 +65,7 @@ const AvailableCarousel = ({ citiesRef }) => {
           <h1 className='lg:text-5xl font-bold text-2xl font-sequel-sans-md text-center lg:text-start'>
             We are available in your city
           </h1>
-          <div className='mt-3'>
+          <div className='mt-3 px-4 lg:px-0'>
             <p className='lg:text-start text-[14px] text-center font-sf-pro-light lg:text-[18px] flex flex-col'>
               Our dedicated team covers universities across various cities in
               Indonesia,
