@@ -24,7 +24,7 @@ const AvailableCarousel = ({ citiesRef }) => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 2.7,
+    slidesToShow: 3.5,
     slidesToScroll: 2,
     arrows: false,
   };
