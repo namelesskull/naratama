@@ -96,7 +96,7 @@ const AvailableCarousel = ({ citiesRef }) => {
           {/* </Slider> */}
         </div>
       </section>
-      <section className='lg:hidden w-full h-full px-4'>
+      <section className='lg:hidden w-full h-full '>
         <div className='slider-container'>
           <Slider {...settingsHp}>
             {cities.map((city, index) => (

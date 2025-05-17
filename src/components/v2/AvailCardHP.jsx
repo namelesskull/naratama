@@ -2,7 +2,7 @@
 const AvailCardHP = ({ image, city }) => {
   return (
     <div className='mb-10 lg:mb-0'>
-      <div className='relative w-[120px] h-[165.9px] overflow-hidden'>
+      <div className='relative w-[105px] h-[145.1px] overflow-hidden'>
         <img
           className='w-full h-full object-cover'
           src={image}
