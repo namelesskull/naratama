@@ -13,6 +13,7 @@ export const UserForm = () => {
     instagram: '',
     tanggal: '',
     jam: '',
+    how: '',
   });
   const [success, setSuccess] = useState(false);
   const [failed, setFailed] = useState(null);
@@ -20,7 +21,7 @@ export const UserForm = () => {
 
   useEffect(() => {
     if (success) {
-      navigate('/review-success');
+      navigate('/success');
     }
   }, [success, navigate]);
 
@@ -219,6 +220,37 @@ export const UserForm = () => {
               className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
             >
               Time
+            </label>
+          </div>
+          <div className='relative z-0 w-full mb-5 group'>
+            <select
+              name='how'
+              id='how'
+              className='block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-black peer'
+              required={true}
+              value={data?.how}
+              onChange={handleChange}
+            >
+              <option value='' disabled selected>
+                How you know us?
+              </option>
+              {[
+                'Instagram',
+                'Tiktok',
+                'Iklan',
+                'Rekomendasi teman',
+                'Lainnya',
+              ].map((how, index) => (
+                <option key={index} value={how}>
+                  {how}
+                </option>
+              ))}
+            </select>
+            <label
+              htmlFor='how'
+              className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+            >
+              Package
             </label>
           </div>
 
