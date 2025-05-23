@@ -164,14 +164,14 @@ export default function ReviewForm() {
 
         <div className='space-y-2'>
           <label htmlFor='field2' className='block font-semibold text-gray-700'>
-            Kebaya
+            Attire
           </label>
           <input
             id='kebaya'
             type='text'
             value={kebaya}
             onChange={(e) => setKebaya(e.target.value)}
-            placeholder='Spill your kebaya brand'
+            placeholder='Spill your attire brand'
             className='w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-gray-400'
           />
         </div>
