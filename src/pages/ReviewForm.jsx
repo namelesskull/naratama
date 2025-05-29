@@ -18,7 +18,7 @@ export default function ReviewForm() {
         method: 'POST',
         body: JSON.stringify({ rating, review, name, univ, mua, kebaya }),
       });
-      navigate('/success');
+      navigate('/review-success');
     } catch (error) {
       console.error(error);
     }
