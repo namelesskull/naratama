@@ -16,24 +16,26 @@ const Home = () => {
   const aRef = useRef(null);
   const bRef = useRef(null);
   const cRef = useRef(null);
+  const dRef = useRef(null);
+
   return (
     <>
       <main className='hidden lg:block overflow-x-hidden'>
-        <HeaderScreen aRef={aRef} bRef={bRef} cRef={cRef} />
+        <HeaderScreen aRef={aRef} bRef={bRef} cRef={cRef} dRef={dRef} />
         <AboutScreen aboutRef={aRef} />
         <AvailableCarousel citiesRef={bRef} />
         <GallerySection galleryRef={cRef} />
         <WhyUs />
-        <ReviewsSection />
+        <ReviewsSection testiRef={dRef} />
         <FooterSection />
       </main>
       <main className='block lg:hidden overflow-x-hidden'>
-        <Header />
+        <Header dRef={dRef} />
         <HeroPhone />
         <AvailableCarousel />
         <GalleryHP />
         <WhyUs />
-        <ReviewsSection />
+        <ReviewsSection testiRef={dRef} />
         <ContactUs />
         <Footer />
       </main>

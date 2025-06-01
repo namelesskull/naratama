@@ -22,7 +22,7 @@ const FooterSection = () => {
             BOOK YOUR SESSION NOW
           </h1>
           <div data-aos='fade-up' className='w-full flex justify-center'>
-            <a href='https://bit.ly/adm-naratama'>
+            <a href='https://www.naratamascape.com/admin.naratama'>
               <div className='flex border-2 items-center border-white px-12 w-fit rounded-full hover:bg-naratama-300'>
                 <h1 className='text-white text-center font-sequel-sans-ld font-medium text-2xl tracking-[0.2em]'>
                   CONTACT US
@@ -93,7 +93,7 @@ const FooterSection = () => {
               <li>
                 <a
                   className='text-black transition hover:underline'
-                  href='https://bit.ly/adm-naratama'
+                  href='https://www.naratamascape.com/admin.naratama'
                 >
                   Contact Us
                 </a>

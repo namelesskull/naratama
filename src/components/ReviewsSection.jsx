@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 
-const ReviewsSection = () => {
+const ReviewsSection = ({ testiRef }) => {
   const reviews = [
     {
       name: 'Rahma',
@@ -99,13 +99,13 @@ const ReviewsSection = () => {
     },
   ];
 
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3.5,
-    arrows: false,
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: false,
+  //   speed: 500,
+  //   slidesToShow: 3.5,
+  //   arrows: false,
+  // };
 
   const settingsHp = {
     dots: false,
@@ -115,7 +115,7 @@ const ReviewsSection = () => {
     arrows: false,
   };
   return (
-    <section className='bg-white'>
+    <section ref={testiRef} className='bg-white'>
       <div className='lg:mx-16 lg:py-16'>
         <h2
           data-aos='fade-right'

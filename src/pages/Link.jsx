@@ -7,7 +7,7 @@ export default function LinkPage() {
   const links = [
     {
       title: 'Whatsapp',
-      url: 'https://bit.ly/adm-naratama',
+      url: 'https://www.naratamascape.com/admin.naratama',
     },
     {
       title: 'Instagram',

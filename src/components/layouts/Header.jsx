@@ -1,7 +1,13 @@
+/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo-square.png';
 
-const Header = () => {
+const Header = ({ dRef }) => {
+  const testimoniClick = () => {
+    if (dRef.current) {
+      dRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div>
       <header className='fixed top-0 left-0 right-0 z-20 bg-white'>
@@ -18,23 +24,20 @@ const Header = () => {
             <li>
               <Link
                 className='text-black text-xs'
-                to='https://www.instagram.com/naratama.graduation'
-              >
-                Instagram
-              </Link>
-            </li>
-            <li>
-              <Link
-                className='text-black text-xs'
-                to='https://bit.ly/adm-naratama'
+                to='https://www.naratamascape.com/admin.naratama'
               >
                 Contact
               </Link>
             </li>
+            <li>
+              <button className='text-black text-xs' onClick={testimoniClick}>
+                Testimoni
+              </button>
+            </li>
           </ul>
           {/* <div className='block md:hidden'>
             <a
-              href='https://bit.ly/adm-naratama'
+              href='https://www.naratamascape.com/admin.naratama'
               className='p-0.5 text-black border text-xs border-black'
             >
               Contact Us

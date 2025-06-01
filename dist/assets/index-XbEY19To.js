@@ -10272,7 +10272,7 @@ const yp = () => {
                   'flex flex-col items-center justify-center space-y-4',
                 children: [
                   c.jsx('a', {
-                    href: 'https://bit.ly/adm-naratama',
+                    href: 'https://www.naratamascape.com/admin.naratama',
                     target: '_blank',
                     rel: 'noopener noreferrer',
                     className: 'text-black',
@@ -10405,7 +10405,7 @@ const yp = () => {
             c.jsx('div', {
               className: 'w-full flex justify-center',
               children: c.jsx('a', {
-                href: 'https://bit.ly/adm-naratama',
+                href: 'https://www.naratamascape.com/admin.naratama',
                 children: c.jsxs('div', {
                   className:
                     'flex border items-center border-white px-4 w-fit rounded-full',
@@ -10514,7 +10514,7 @@ const yp = () => {
                   c.jsx('li', {
                     children: c.jsx('a', {
                       className: 'text-black transition hover:underline',
-                      href: 'https://bit.ly/adm-naratama',
+                      href: 'https://www.naratamascape.com/admin.naratama',
                       children: 'Contact Us',
                     }),
                   }),
@@ -17317,7 +17317,10 @@ const Y2 = () => {
   };
 function eg() {
   const e = [
-      { title: 'Whatsapp', url: 'https://bit.ly/adm-naratama' },
+      {
+        title: 'Whatsapp',
+        url: 'https://www.naratamascape.com/admin.naratama',
+      },
       {
         title: 'Instagram',
         url: 'https://www.instagram.com/naratama.graduation',

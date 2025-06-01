@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Failed } from '../components/global/Toast';
-import { useNavigate } from 'react-router-dom';
 
 export const UserForm = () => {
-  const navigate = useNavigate();
   const [data, setData] = useState({
     nama: '',
     kampus: '',
@@ -15,26 +13,27 @@ export const UserForm = () => {
     jam: '',
     how: '',
   });
-  const [success, setSuccess] = useState(false);
   const [failed, setFailed] = useState(null);
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    if (success) {
-      navigate('/success');
-    }
-  }, [success, navigate]);
 
   const handleSubmit = async (event) => {
     setLoading(true);
     event.preventDefault();
+    const rawMessage = `*Booking Form*
+
+Nama: ${data.nama}
+Universitas: ${data.kampus}
+Paket: ${data.paket}
+Tanggal: ${data.tanggal}
+Sesi: ${data.jam}`;
+    const encodedMessage = encodeURIComponent(rawMessage);
     try {
       await fetch(import.meta.env.VITE_SPREADSHEET_URL, {
         method: 'POST',
         body: JSON.stringify(data),
       });
+      window.location.href = `https://wa.me/6285974810349?text=${encodedMessage}`;
       setData(null);
-      setSuccess(true);
       setLoading(false);
     } catch (error) {
       setFailed(error);

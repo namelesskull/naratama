@@ -10,7 +10,7 @@ export const ContactUs = () => {
             BOOK YOUR SESSION NOW !
           </h1>
           <div className='w-full flex justify-center'>
-            <a href='https://bit.ly/adm-naratama'>
+            <a href='https://www.naratamascape.com/admin.naratama'>
               <div
                 data-aos='fade-up'
                 className='flex border items-center border-white px-4 w-fit rounded-full'

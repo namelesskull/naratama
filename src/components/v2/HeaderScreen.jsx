@@ -2,7 +2,7 @@
 import background from '../../assets/images/desktop.jpg';
 import logoext from '../../assets/images/logo-ext-white.png';
 
-const HeaderScreen = ({ aRef, bRef, cRef }) => {
+const HeaderScreen = ({ aRef, bRef, cRef, dRef }) => {
   const aboutClick = () => {
     if (aRef.current) {
       aRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -17,6 +17,11 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
   const galleryClick = () => {
     if (cRef.current) {
       cRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const testimoniClick = () => {
+    if (dRef.current) {
+      dRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
   };
   return (
@@ -43,10 +48,13 @@ const HeaderScreen = ({ aRef, bRef, cRef }) => {
               <li className='mx-6'>
                 <button onClick={galleryClick}>Gallery</button>
               </li>
+              <li className='mx-6'>
+                <button onClick={testimoniClick}>Testimoni</button>
+              </li>
             </ul>
           </div>
           <div>
-            <a href='https://bit.ly/adm-naratama'>
+            <a href='https://www.naratamascape.com/admin.naratama'>
               <button className='border border-black px-8 py-2 font-sequel-sans-ld'>
                 Contact Us
               </button>

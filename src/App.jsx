@@ -14,6 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReviewForm from './pages/ReviewForm';
 import ReviewSuccess from './pages/SuccessReview';
+import WaMe from './pages/waMe';
 
 export default function App() {
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function App() {
         <Route path='/review' element={<ReviewForm />} />
         <Route path='/review-success' element={<ReviewSuccess />} />
         <Route path='/success' element={<Success />} />
+        <Route path='/admin.naratama' element={<WaMe />} />
       </Routes>
     </>
   );
